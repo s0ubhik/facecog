@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}| Home{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">    
+{% endblock %}
+
+{% block content %}
+    <div class="head">
+        <div class="head-head">
+            <div class="head-title">facecog</div>
+            <div class="head-tag">simple app to register and recognize faces</div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="buts">
+            <button class="but but-acc1" onclick="window.location='/register'">Register</button>
+            <button class="but but-acc2" onclick="window.location='/recognise'">Recognise</button>
+        </div>
+    </div>
+{% endblock %}

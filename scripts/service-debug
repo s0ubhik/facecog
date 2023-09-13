@@ -1,0 +1,4 @@
+#!/bin/bash
+bash scripts/init
+export TF_CPP_MIN_LOG_LEVEL=0
+flask run -p 8080 --debug

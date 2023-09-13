@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}| Register{% endblock %}
+{% block head %}
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/regrec.css') }}">    
+{% endblock %}
+
+{% block content %}
+    <div class="head">
+        <div class="head-head">
+            <div class="head-title">facecog</div>
+        </div>
+        <div class="head-back" onclick="window.location='/'"><img src="{{ url_for('static',filename='icons/back_purple.png') }}" alt=""></div>
+    </div>
+    <div class="body">
+        <div class="photo-input">
+            <div id="nophoto">Click or Upload Image from Gallery</div>
+            <video id="vdo-cam"></video>
+            <img id="gal-cam">
+        </div>
+        <div>
+            <div class="photo-gallery" onclick="open_file_select()">Upload from Gallery</div>
+            <input type="file" id="gal-file">
+        </div>
+        <div class="input-control">
+            <div class="log" id="log"></div>
+            <div class="input-field">
+                <div class="input-text">Enter Name</div>
+                <input type="text" placeholder="Jack Sparow" autocomplete="off" spellcheck="false" id="name" class="input-input">
+            </div>
+            <button id="reg-but" class="but" onclick="register()">Register</button>
+        </div>
+    </div>
+{% endblock %}

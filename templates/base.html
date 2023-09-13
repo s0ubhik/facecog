@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facecog {% block title %} {% endblock %}</title>
+    <style>
+:root {
+    --primary: #0C0A09;
+    --secondary: #292524;
+    --light-grey: #D6D3D1;
+    --accent1: #5B21B6;
+    --accent1_200: #9865E9;
+    --accent1_100: #D1B5FE;
+    --accent2: #047857;
+    --accent2_200: #3DD9AC;
+    --accent2_100: #8DE4CC;
+    --red_400: #dc2626;
+    --green_400: #22c55e;
+}
+
+body {
+    background: var(--primary);
+    color: white;
+}
+
+.section {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+    </style>
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <div class="section">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+#!/bin/bash
+bash scripts/init
+export TF_CPP_MIN_LOG_LEVEL=3
+gunicorn -b 0.0.0.0:5000 app:app

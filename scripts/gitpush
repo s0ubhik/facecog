@@ -1,0 +1,14 @@
+#!/bin/bash
+echo Git Push
+cat  >> .gitignore << EOL
+venv/
+dataset/
+__pycache__/
+faces.db
+.gitignore
+EOL
+
+git add .
+read -p "Enter Message: " msg 
+git commit -m $msg
+git push

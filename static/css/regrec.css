@@ -1,0 +1,156 @@
+.head {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.head-head {
+    text-align: center;
+}
+
+.head-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-back img{
+    text-align: left;
+}
+
+.photo-input {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background: var(--secondary);
+    border-radius: 10px;
+    border: 2px solid var(--accent1_200);
+    display: table;
+}
+
+#nophoto {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: var(--light-grey);
+}
+
+#vdo-cam, #gal-cam {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.but {
+    padding: 10px 20px;
+    display: block;
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.but-acc1, .but {
+    background: var(--accent1);
+    color: white
+}
+
+.but-acc2 {
+    background: var(--accent2);
+}
+
+.input-control {
+    margin-top: 20px;
+}
+
+.input-field {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-text {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.log {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.log-scs {
+    color: var(--green_400);
+}
+
+.log-name {
+    color: var(--accent2_200);
+    font-size: 20px;
+    background: var(--secondary);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.log-err {
+    color: var(--red_400);
+}
+
+.but:disabled {
+    background: var(--secondary);
+}
+
+.input-input {
+    padding: 10px 10px;
+    border: 0px;
+    outline: none;
+    border: 2px solid var(--accent1_200);
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 7px;
+    background: var(--secondary);
+}
+
+.photo-gallery {
+    color: var(--accent1_100);
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: right;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#vdo-cam, #gal-file, #gal-cam {
+    display: none;
+}
+
+#gal-cam {
+    object-fit: cover;
+    object-position: left;
+
+}
+
+.border-acc2 {
+    border-color: var(--accent2_200);
+}
+
+.color-acc2-200 {
+    color: var(--accent2_100);
+}
+
+.rec-ctrl .log{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

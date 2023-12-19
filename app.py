@@ -5,6 +5,13 @@ import matplotlib.pyplot as plt
 import sqlite3
 import hashlib
 import os
+from deepface.basemodels import VGGFace as vggface
+
+def md5(data):
+    return hashlib.md5(repr(data).encode()).hexdigest()
+
+def download_models():
+    vggface.loadModel()
 
 con = sqlite3.connect("faces.db")
 cur = con.cursor()
@@ -13,8 +20,7 @@ con.commit()
 
 if not os.path.isdir("dataset"): os.mkdir("dataset")
 
-def md5(data):
-    return hashlib.md5(repr(data).encode()).hexdigest()
+download_models()
 
 app = Flask(__name__)
 

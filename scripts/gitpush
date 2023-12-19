@@ -10,5 +10,5 @@ EOL
 
 git add .
 read -p "Enter Message: " msg 
-git commit -m $msg
+git commit -m "$msg"
 git push

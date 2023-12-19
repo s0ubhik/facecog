@@ -29,7 +29,7 @@ source venv/bin/activate
 
 #### 3. Install Dependecies
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 #### 4. Start Flask
